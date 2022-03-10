@@ -22,8 +22,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
           architecture: x64
 
-      - name: Install requirements
+      - name: Install theme
         run: python3 -m pip install mkdocs-material      
+
+      - name: Install requirements
         run: python3 -m pip install -r requirements.txt
 
       - name: Deploy 🚀
