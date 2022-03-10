@@ -1,34 +1,38 @@
-# Game
+# RETRO CARNAGE
 
-Retro-Carnage is currently beeing implemented as a native application using the go programming language.
+Repository: https://github.com/huddeldaddel/retro-carnage
 
-## Structure
+![Project structure](images/youtube-2021-06-03.png)
 
-TODO
+RETRO CARNAGE is a platform independent application written in Go. It's been tested on Linux and Windows. 
 
 ## Build & Run
 
-### The game
+Make sure you have Golang (>= 1.16) and git installed
 
-- Make sure to have a at least version 1.15 of go installed.
-- Get the latest source code from [GitHub](https://github.com/huddeldaddel/retro-carnage).
-- On Ubuntu Linux you'll need to install additional dependencies:
-  - `sudo apt-get update`
-  - `sudo apt-get install -y libgl1-mesa-dev xorg-dev libasound2-dev`
-- Open the project folder using GoLand for best development experience.
+### Install dependencies
 
-TODO: Add commands that run a build on cmdline
+#### On Ubuntu
 
-### The documentation
+Install the required libraries: `sudo apt-get install -y libgl1-mesa-dev xorg-dev libasound2-dev`
 
-The documentation uses MkDocs to transform Markdown documents into static HTML and JavaScript files.
+#### On Fedora
 
-- Make sure to have a recent version of MkDocs installed. Development of the game happens with version 1.0.4 running on
-  Python 3.8.
-- Get the latest source code from [GitHub](https://github.com/huddeldaddel/retro-carnage).
-- Open you command line, navigate to the project folder.
-- Run `mkdocs build` to create a production build of the documentation. This will result in a bunch of static files and
-  assets in **./site**. Copy this folder to a web server, and you're ready to go.
-- If you want to open the documentation locally or want to work on it, run `mkdocs serve` instead. This will build the
-  docs and start a local server on [http://localhost:8000/](http://localhost:8000/). It will notice any changes you make
-  to the documentation files and update the build accordingly.
+Install the required
+libraries: `sudo dnf install libXcursor-devel libXrandr-devel libXinerama-devel libXi-devel mesa-libGL-devel xorg-x11-server-devel alsa-lib-devel libXxf86vm-devel`
+
+#### On Windows
+
+Install [tdm-gcc](https://jmeubank.github.io/tdm-gcc/) (so that various go-bindings can be compiled).
+
+### Build and run the game
+
+- Get the code: `git clone https://github.com/huddeldaddel/retro-carnage.git`
+- Change into the src directory: `cd retro-carnage/src`
+- Install required modules: `go get -d`
+- Build the application: `go build`
+- Move the binary one level up: `mv retro-carnage ./..`
+- Change into the main directory: `cd ..`
+- Finally: start the game! `./retro-carnage`
+
+The repository contains IDE configurations for JetBrains Goland to test and run the game.

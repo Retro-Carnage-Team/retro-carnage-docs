@@ -1,9 +1,11 @@
-@startuml
+@startuml "components"
 
 database MongoDB
 
+[Editor]
+
 REST - [Backend]
 [Backend] -down- MongoDB
-[Frontend] - REST
+[Game] - REST
 
 @enduml

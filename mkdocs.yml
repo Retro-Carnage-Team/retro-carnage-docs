@@ -4,8 +4,10 @@ nav:
   - Home: index.md
   - Game: game.md
   - Backend: backend.md
+  - Editor: editor.md
   - License: license.md
 theme:
-  name: readthedocs
-  highlightjs: true
-  prev_next_buttons_location: none
+  name: material
+extra:
+  generator: false
+copyright: Copyright &copy; 2020 - 2022 Thomas Werner
