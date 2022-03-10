@@ -28,5 +28,5 @@ jobs:
       - name: Install requirements
         run: python3 -m pip install -r requirements.txt
 
-      - name: Deploy 🚀
+      - name: Build
         run: python3 -m mkdocs build --strict --verbose
