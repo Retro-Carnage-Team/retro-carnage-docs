@@ -1,3 +1,5 @@
+[![mkdocs](https://github.com/Retro-Carnage-Team/retro-carnage-docs/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/Retro-Carnage-Team/retro-carnage-docs/actions/workflows/mkdocs.yml)
+
 # RETRO CARNAGE DOCUMENTATION
 
 This repository contains data and configuration to generate the website http://docs.retro-carnage.net.
